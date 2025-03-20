@@ -33,12 +33,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <version>3.3.3</version>
 
         </dependency>
         <!-- Якщо ви використовуєте Spring Boot для веб-додатків, додайте також starter для вебу -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.3.3</version>
         </dependency>
     </dependencies>
 
