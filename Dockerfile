@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . .
 
 # Збираємо JAR-файл
-RUN ./mvnw clean package
+# RUN ./mvnw clean package
+RUN mvn clean package
 
 # Запускаємо додаток
 CMD ["java", "-jar", "target/lab2-1.0-SNAPSHOT.jar"]
