@@ -1,6 +1,9 @@
 # Використовуємо офіційний образ JDK 17
 FROM eclipse-temurin:17-jdk
 
+# Встановлюємо Maven
+RUN apt-get update && apt-get install -y maven
+
 # Встановлюємо робочу директорію в контейнері
 WORKDIR /app
 
@@ -8,7 +11,6 @@ WORKDIR /app
 COPY . .
 
 # Збираємо JAR-файл
-# RUN ./mvnw clean package
 RUN mvn clean package
 
 # Запускаємо додаток
